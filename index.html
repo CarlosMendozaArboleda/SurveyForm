@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,400;1,700&family=Open+Sans&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+     <div class="container mx-auto">
+          <div class="form-group mx-auto">
+               <header class="header">
+                    <h1 id="title" class="text-center">Buenaventura Code Camp</h1>
+                    <p id="description" class="description text-center" >Gracias por atender nuestra encuesta. Nos gustaria saber cuales son las tecnologias preferidas por los jovenes de la ciudad</p>
+               </header>
+
+          </div>
+          
+
+          <form id="survey-form">
+               <div class="form-group">
+                    <label id="name-label" for="name">Nombre</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su Nombre" required>
+               </div>
+               <div class="form-group">
+                    <label id="email-label" for="name">Email</label>
+                    <input type="email" name="name" id="email" class="form-control" placeholder="Ingrese su Correo" required>
+               </div>
+               <div class="form-group">
+                    <label id="number-label" for="name">Edad<span class="clue">(optional)</span></label>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Ingrese su Edad" required>
+               </div>
+               <div class="form-group">
+                    <p id="rol">Escoge el rol en el cual te encuentras</p>
+                    <select name="role" id="dropdown" name="control" class="form-control" required>
+                         <option disable selected value>Seleccione su rol actual</option>
+                         <option value="estudiante">Estudiantes</option>
+                         <option value="trabajo">Trabajo a tiempo completo</option>
+                         <option value="autodidacta">Autodidacta</option>
+                         <option value="no_sabe">No sabe</option>
+                         <option value="otros">Otros</option>
+                    </select>
+               </div> 
+               <div class="form-group">
+                    <p>Recomendarias Buenaventura Code Camp a tus amigos?</p>
+                    <label>
+                         <input name="user-recommend" type="radio" value="definitivamente" class="input-radio" checked />
+                         "Definitivamente"
+                    </label>
+                    <BR>
+                    <label>
+                         <input name="user-recommend" type="radio" value="talvez" class="input-radio" checked />
+                         "Tal Vez"
+                    </label>
+                    <BR>
+                    <label>
+                         <input name="user-recommend" type="radio" value="no" class="input-radio" checked />
+                         "Seguramente no"
+                    </label>
+                    <BR>
+               </div> 
+               
+               <div class="form-group">
+                    <p>
+                      Cual es la caracteristica favorita de Buenaventura Code Camp?
+                    </p>
+                    <select id="most-like" name="mostLike" class="form-control" required>
+                      <option disabled selected value>Select an option</option>
+                      <option value="challenges">Retos</option>
+                      <option value="projects">Proyectos</option>
+                      <option value="community">Comunidad</option>
+                      <option value="openSource">Codigo abierto</option>
+                    </select>
+                  </div>
+
+               <div class="form-group">
+                    <p>Que teconlogias te gustaria abordar
+                    <span class="clue">(Seleccion multiple)</span></p>
+                    <label>
+                    <input type="checkbox" class="input-checkbox" value="front-end-projects" />Proyectos Front-end</label>
+                    <BR>
+                    <label><input type="checkbox" class="input-checkbox" value="back-end-projects" />Proyectos Back-end</label>
+                    <BR>
+                    <label><input type="checkbox" class="input-checkbox" value="data-visualization" />Visualizacion de Datos </input></label>
+                    <BR>
+                    <label><input type="checkbox" class="input-checkbox" value="challenges" />Retos</input></label>
+                    <BR>
+                    <label><input type="checkbox" class="input-checkbox" value="open-source-community" />Comunidad de Codigo abierto</label>
+                    <BR>
+                    <label><input type="checkbox" class="input-checkbox" value="gitter-help-rooms" />Foros de ayuda Git</label>
+                    <BR>
+                    <label><input type="checkbox" class="input-checkbox" value="videos" />Videos</label>
+                    <BR>
+                    <label><input type="checkbox" class="input-checkbox" value="city-meetups" />Reuniones en las ciudades</label>
+                    <BR>
+                    <label><input type="checkbox" class="input-checkbox" value="wiki" />Wiki</label>
+                    <BR>
+                    <label><input type="checkbox" class="input-checkbox" value="forum" />Foros</label>
+                    <BR>
+                    <label><input type="checkbox" class="input-checkbox" value="additional-courses" />Cursos Adicionales</label>
+                    <BR>                     
+               </div>
+               <div class="form-group">
+                    <p>Algun comentario o sugerencia?</p>
+                    <textarea id="comments" class="input-textarea"></textarea>
+               </div>
+               <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                         Submit
+                       </button>
+               </div>
+          </form>
+          
+     </div>  
+     <script src="style.css"></script> 
+     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
